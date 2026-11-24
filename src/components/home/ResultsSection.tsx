@@ -3,8 +3,9 @@
 import React from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { Trophy, User, ArrowRight, Sparkles, CheckCircle2 } from "lucide-react";
-import { resultsData, statisticsPlaceholders } from "@/data/results";
+import { Trophy, ArrowRight, Sparkles } from "lucide-react";
+import { statisticsPlaceholders } from "@/data/results";
+import ResultsShowcase from "@/components/results/ResultsShowcase";
 import { useDemoModal } from "@/context/DemoModalContext";
 import { siteConfig } from "@/config/site";
 
@@ -67,54 +68,9 @@ export default function ResultsSection() {
           ))}
         </div>
 
-        {/* Sample Result Cards Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-14">
-          {resultsData.map((item, idx) => (
-            <motion.div
-              key={item.id}
-              initial={{ opacity: 0, y: 25 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.45, delay: idx * 0.1 }}
-              whileHover={{ y: -6, transition: { duration: 0.2 } }}
-              className="bg-white rounded-2xl border border-slate-200/90 shadow-md p-6 flex flex-col justify-between hover:shadow-xl hover:border-blue-400 transition-all duration-300 group"
-            >
-              <div>
-                {/* Avatar & Header */}
-                <div className="flex items-center gap-3.5 mb-4">
-                  <div className="w-12 h-12 rounded-full bg-slate-100 border border-slate-300 flex items-center justify-center text-slate-500 group-hover:bg-blue-50 group-hover:text-blue-600 transition-colors">
-                    <User className="w-6 h-6" />
-                  </div>
-                  <div>
-                    <h3 className="font-heading font-bold text-sm text-slate-900 group-hover:text-blue-600 transition-colors">
-                      {item.studentName}
-                    </h3>
-                    <span className="text-[11px] text-slate-500 block">
-                      {item.academicYear}
-                    </span>
-                  </div>
-                </div>
-
-                {/* Exam Badge */}
-                <div className="mb-4">
-                  <span className="inline-block px-2.5 py-1 rounded-md text-[11px] font-bold uppercase tracking-wider bg-blue-50 text-blue-700 border border-blue-200">
-                    {item.exam}
-                  </span>
-                </div>
-
-                {/* Quote / Feedback */}
-                <p className="text-xs text-slate-600 italic leading-relaxed mb-4">
-                  &ldquo;{item.quotePlaceholder}&rdquo;
-                </p>
-              </div>
-
-              {/* Sample Tag */}
-              <div className="pt-3 border-t border-slate-100 flex items-center justify-between text-[10px] text-slate-400 font-medium">
-                <span>{item.isPlaceholderNotice}</span>
-                <span className="text-blue-600 font-bold">{item.badge}</span>
-              </div>
-            </motion.div>
-          ))}
+        {/* Interactive Multi-Year Result Showcase */}
+        <div className="mb-14">
+          <ResultsShowcase initialYear="All" limit={4} showCategoryTabs={false} />
         </div>
 
         {/* Section CTAs */}

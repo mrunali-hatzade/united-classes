@@ -2,7 +2,8 @@ import React from "react";
 import Link from "next/link";
 import type { Metadata } from "next";
 import { Trophy, Award, User, Sparkles, ArrowRight, ShieldCheck, CheckCircle2, TrendingUp, HelpCircle } from "lucide-react";
-import { resultsData, statisticsPlaceholders } from "@/data/results";
+import { statisticsPlaceholders } from "@/data/results";
+import ResultsShowcase from "@/components/results/ResultsShowcase";
 import { siteConfig } from "@/config/site";
 
 export const metadata: Metadata = {
@@ -101,54 +102,9 @@ export default function ResultsPage() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
-          {resultsData.map((item) => (
-            <div
-              key={item.id}
-              className="bg-white rounded-3xl border border-slate-200/90 shadow-md p-6 flex flex-col justify-between hover:shadow-xl hover:border-blue-400 transition-all duration-300 transform hover:-translate-y-1 group"
-            >
-              <div>
-                {/* Avatar Placeholder */}
-                <div className="flex items-center gap-3.5 mb-4">
-                  <div className="w-12 h-12 rounded-full bg-slate-100 border border-slate-300 flex items-center justify-center text-slate-500 group-hover:bg-blue-50 group-hover:text-blue-600 transition-colors">
-                    <User className="w-6 h-6" />
-                  </div>
-                  <div>
-                    <h3 className="font-heading font-bold text-sm text-slate-900 group-hover:text-blue-600 transition-colors">
-                      {item.studentName}
-                    </h3>
-                    <span className="text-[11px] text-slate-500 block">
-                      {item.academicYear}
-                    </span>
-                  </div>
-                </div>
-
-                <div className="mb-4">
-                  <span className="inline-block px-2.5 py-1 rounded-md text-[11px] font-bold uppercase tracking-wider bg-blue-50 text-blue-700 border border-blue-200">
-                    {item.exam}
-                  </span>
-                </div>
-
-                <div className="bg-amber-50/70 border border-amber-200/80 rounded-xl p-3.5 mb-4">
-                  <span className="text-[10px] font-bold uppercase tracking-wider text-amber-800 block mb-0.5">
-                    Exam Achievement:
-                  </span>
-                  <p className="text-xs font-semibold text-slate-900 font-mono">
-                    {item.achievement}
-                  </p>
-                </div>
-
-                <p className="text-xs text-slate-500 italic leading-relaxed">
-                  {item.quotePlaceholder}
-                </p>
-              </div>
-
-              <div className="pt-4 mt-4 border-t border-slate-100 flex items-center justify-between text-[10px] text-slate-400 font-mono">
-                <span>{item.isPlaceholderNotice}</span>
-                <span>{item.badge}</span>
-              </div>
-            </div>
-          ))}
+        {/* Interactive Multi-Year Results Showcase */}
+        <div className="mb-16">
+          <ResultsShowcase initialYear="All" />
         </div>
 
         {/* 4 Exam Categories Breakdown */}
