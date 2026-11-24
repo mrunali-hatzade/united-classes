@@ -17,25 +17,25 @@ export default function ResultsPage() {
       title: "JEE Main & Advanced",
       tag: "Engineering Entrances",
       desc: "Top percentiles driven by deep problem-solving skills, multi-concept mechanics, and time management.",
-      badge: "Target 99+ Percentile",
+      badge: "Engineering Track",
     },
     {
       title: "NEET-UG (PCB Medical)",
       tag: "Medical Entrances",
-      desc: "Top scores across Physics, Chemistry & Biology (Botany/Zoology 360 target) with NCERT line-by-line mastery.",
-      badge: "Target 650+ Marks",
+      desc: "Comprehensive preparation across Physics, Chemistry & Biology (Botany & Zoology) with NCERT line-by-line mastery.",
+      badge: "Medical Track",
     },
     {
       title: "MHT-CET (PCM / PCB)",
       tag: "Maharashtra State Entrance",
       desc: "High percentile scores targeting COEP, VJTI, and top Maharashtra engineering and pharmacy colleges.",
-      badge: "Target 99+ Percentile",
+      badge: "State Entrance Track",
     },
     {
       title: "12th HSC & CBSE Boards",
       tag: "Board Theory Excellence",
       desc: "Mastery of step-by-step theoretical derivations, ray diagrams, and examiner presentation formats.",
-      badge: "90%+ Scores",
+      badge: "Board Exam Excellence",
     },
   ];
 

@@ -79,9 +79,9 @@ export default function CourseCards() {
       topics: [
         "Botany: Cell Biology, Plant Physiology & Genetics",
         "Zoology: Human Physiology, Reproduction & Health",
-        "100% NCERT Word-by-Word Forensic Decoding",
+        "Rigorous NCERT Line-by-Line Clarification",
         "Clean Anatomical & Botanical Diagram Drafting",
-        "Weekly 90-Question Timed NEET OMR Drills",
+        "Regular Timed NEET OMR Practice Drills",
       ],
     },
   ];

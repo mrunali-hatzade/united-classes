@@ -456,7 +456,7 @@ export default function DemoEnquiryForm({
       </button>
 
       <p className="text-center text-[11px] text-slate-400">
-        100% Free Demo • Batch capped at 30 students • No payment required
+        Free Demo Class • Focused Batches • No Payment Required
       </p>
     </form>
   );

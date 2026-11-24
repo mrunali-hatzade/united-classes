@@ -87,7 +87,7 @@ export default function Hero() {
               {/* Atrangi handwritten badge */}
               <span className="hidden xl:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-amber-50 border border-amber-300/80 text-amber-900 shadow-xs rotate-[-2deg] select-none">
                 <span className="font-atrangi text-sm font-bold text-amber-700 tracking-wide">
-                  ✍️ 100% Concept Clarity!
+                  ✍️ Strong Concept Clarity!
                 </span>
               </span>
             </motion.div>

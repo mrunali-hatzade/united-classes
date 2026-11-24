@@ -31,16 +31,16 @@ export default function ExamStrip() {
       icon: Calculator,
       bgColor: "bg-indigo-50 text-indigo-600 border-indigo-200",
       description:
-        "High-speed MHT-CET 2-mark shortcut algorithms, graph visualization, calculus proofs, and 100/100 Board target.",
+        "Systematic problem solving, graph visualization, calculus proofs, and comprehensive Board & CET preparation.",
       href: "/courses/mathematics",
     },
     {
       title: "Biology",
-      badge: "NEET 360 & HSC Boards",
+      badge: "NEET & HSC Boards",
       icon: Dna,
       bgColor: "bg-cyan-50 text-cyan-600 border-cyan-200",
       description:
-        "100% NCERT line-by-line Botany & Zoology decoding, labeled diagram drafting, and weekly timed OMR drills.",
+        "Thorough NCERT Botany & Zoology coverage, labeled diagram drafting, and regular timed practice drills.",
       href: "/courses/biology",
     },
   ];
