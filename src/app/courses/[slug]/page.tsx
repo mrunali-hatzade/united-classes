@@ -18,6 +18,8 @@ export async function generateStaticParams() {
   }));
 }
 
+export const dynamicParams = false;
+
 export async function generateMetadata({ params }: CourseDetailPageProps): Promise<Metadata> {
   const { slug } = await params;
   const course = coursesData.find((c) => c.slug === slug);

@@ -40,7 +40,7 @@ export default function CoursesPage() {
           </h1>
 
           <p className="text-slate-600 text-sm sm:text-base leading-relaxed">
-            Dedicated subject specialist mentorship across Physics, Chemistry, Mathematics &amp; Biology. Enrol in individual subject batches or our complete synchronized PCMB integrated package.
+            Dedicated subject specialist mentorship across Physics, Chemistry, Mathematics &amp; Biology. Enrol in individual subject batches or our complete PCMB integrated package.
           </p>
         </div>
       </section>
@@ -148,7 +148,7 @@ export default function CoursesPage() {
                         )}
                         <div className="min-w-0 flex-1">
                           <span className="text-[10px] font-bold uppercase tracking-wider text-cyan-300 block">
-                            Assigned Faculty
+                            Assigned Faculty (Sample Profile)
                           </span>
                           <h4 className="text-white font-bold text-sm truncate font-heading">
                             {course.assignedFaculty.name}

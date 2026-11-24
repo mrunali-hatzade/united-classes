@@ -6,7 +6,7 @@ import { User, Award, BookOpen, CheckCircle2, GraduationCap, Sparkles, ArrowRigh
 import { siteConfig } from "@/config/site";
 
 export const metadata: Metadata = {
-  title: "About Us | United Classes Bhandara - Building Strong Foundations in Physics",
+  title: "About Us | United Classes Bhandara - Building Strong Foundations in Science (PCMB)",
   description:
     "Learn about United Classes, our teaching approach, faculty mentorship, and commitment to conceptual clarity for Class 11th, 12th, JEE, NEET, and MHT-CET students in Bhandara.",
 };
@@ -60,7 +60,7 @@ export default function AboutPage() {
             </h1>
 
             <p className="text-slate-600 text-base sm:text-lg leading-relaxed">
-              Physics is not a chore of rote memorization—it is the language of how reality functions. We help Class 11th and 12th science students master this language with clarity and confidence.
+              Science is not a chore of rote memorization—it is the language of how reality functions. We help Class 11th and 12th science students master Physics, Chemistry, Mathematics &amp; Biology with clarity and confidence.
             </p>
           </div>
         </div>
@@ -223,6 +223,9 @@ export default function AboutPage() {
             </h2>
             <p className="text-slate-600 text-sm">
               No single teacher handles multiple subjects. Each discipline is led by an experienced postgraduate specialist.
+            </p>
+            <p className="text-[11px] text-slate-400 italic">
+              (Sample faculty profiles illustrating department setup • Official credentials and photographs will be updated upon final institute roster confirmation)
             </p>
           </div>
 

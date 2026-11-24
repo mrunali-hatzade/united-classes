@@ -56,6 +56,13 @@ export default function ResultsPage() {
           <p className="text-slate-600 text-sm sm:text-base leading-relaxed">
             Consistent preparation, personal doubt clearing, and concept-first pedagogy reflect in our students&apos; confidence and performance across competitive examinations.
           </p>
+
+          <div className="bg-amber-50/90 border border-amber-300/80 rounded-2xl p-3.5 text-xs text-amber-900 inline-flex items-center gap-2 shadow-xs">
+            <Sparkles className="w-4 h-4 text-amber-600 shrink-0" />
+            <span>
+              <strong>Sample Performance Showcase:</strong> Student achievement cards below represent structured sample layouts. Official verified merit records and scorecards will be published upon client verification.
+            </span>
+          </div>
         </div>
       </section>
 
@@ -136,10 +143,9 @@ export default function ResultsPage() {
                 </p>
               </div>
 
-              <div className="pt-4 mt-4 border-t border-slate-100">
-                <span className="text-[10px] text-slate-400 block font-mono">
-                  {item.badge}
-                </span>
+              <div className="pt-4 mt-4 border-t border-slate-100 flex items-center justify-between text-[10px] text-slate-400 font-mono">
+                <span>{item.isPlaceholderNotice}</span>
+                <span>{item.badge}</span>
               </div>
             </div>
           ))}
@@ -182,7 +188,7 @@ export default function ResultsPage() {
             Your Success Story Starts Here
           </h2>
           <p className="text-slate-300 text-sm max-w-xl mx-auto leading-relaxed">
-            Take the first step toward conquering Physics. Attend a free interactive trial class and see our teaching methodology firsthand.
+            Take the first step toward mastering Science (Physics, Chemistry, Mathematics &amp; Biology). Attend a free interactive trial class and see our teaching methodology firsthand.
           </p>
           <div className="pt-2 flex flex-col sm:flex-row justify-center gap-4">
             <Link
