@@ -47,7 +47,11 @@ export default function FacultySection() {
           </h2>
 
           <p className="text-slate-600 text-sm sm:text-base leading-relaxed">
-            Our department heads bring over a decade of dedicated competitive examination and Board coaching experience to Bhandara, mentoring students with patience and technical rigor.
+            Dedicated subject specialist mentorship across Physics, Chemistry, Mathematics, and Biology, guiding students with conceptual depth and structured exam preparation.
+          </p>
+
+          <p className="text-[11px] text-slate-500 font-medium tracking-wide">
+            *Faculty roster profiles represent illustrative department structures subject to final institute confirmation.
           </p>
         </motion.div>
 
@@ -89,7 +93,7 @@ export default function FacultySection() {
                     <div className="absolute bottom-3 left-3 right-3 text-white">
                       <span className="text-[11px] font-medium flex items-center gap-1 drop-shadow-sm text-slate-200">
                         <Award className="w-3.5 h-3.5 text-amber-400 shrink-0" />
-                        {member.qualificationPlaceholder.split("(")[1]?.replace(")", "") || "10+ Yrs Exp."}
+                        {member.qualificationPlaceholder.split("(")[1]?.replace(")", "") || "Subject Specialist"}
                       </span>
                     </div>
                   </div>

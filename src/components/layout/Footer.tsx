@@ -111,17 +111,19 @@ export default function Footer() {
               Course Programs
             </h4>
             <ul className="space-y-2.5 text-sm">
-              {coursesData.map((course) => (
-                <li key={course.id}>
-                  <Link
-                    href={`/courses/${course.slug}`}
-                    className="hover:text-cyan-300 transition-colors duration-150 inline-flex items-center gap-1.5"
-                  >
-                    <span className="w-1.5 h-1.5 rounded-full bg-blue-400" />
-                    <span>{course.title}</span>
-                  </Link>
-                </li>
-              ))}
+              {coursesData
+                .filter((c) => !c.id.includes("alias"))
+                .map((course) => (
+                  <li key={course.id}>
+                    <Link
+                      href={`/courses/${course.slug}`}
+                      className="hover:text-cyan-300 transition-colors duration-150 inline-flex items-center gap-1.5"
+                    >
+                      <span className="w-1.5 h-1.5 rounded-full bg-blue-400" />
+                      <span>{course.title}</span>
+                    </Link>
+                  </li>
+                ))}
             </ul>
           </div>
 

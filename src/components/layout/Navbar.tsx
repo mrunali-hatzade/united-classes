@@ -182,7 +182,7 @@ export default function Navbar() {
                 <span>BOOK FREE DEMO LECTURE</span>
               </button>
               <p className="text-center text-[11px] text-slate-500">
-                Bhandara Classroom Center • Max 30 Students/Batch
+                Bhandara Classroom Center • Focused Batch Sizes
               </p>
             </div>
           </div>

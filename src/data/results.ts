@@ -58,9 +58,9 @@ export const resultsData: ResultPlaceholder[] = [
 
 export const statisticsPlaceholders = [
   {
-    label: "Batch Size Kept Small",
-    value: "30 Max",
-    subtext: "For personal mentor attention & daily doubt clearing",
+    label: "Batch Environment",
+    value: "Focused",
+    subtext: "Limited intake for individual mentor attention",
   },
   {
     label: "All 4 Core Subjects",
@@ -68,13 +68,13 @@ export const statisticsPlaceholders = [
     subtext: "Physics, Chemistry, Maths & Biology under one roof",
   },
   {
-    label: "Practice Problems / Chapter",
-    value: "250+",
-    subtext: "Graded from basic Board concept to competitive level",
+    label: "Practice Worksheets",
+    value: "Graded",
+    subtext: "Structured problem sets from Board to entrance level",
   },
   {
-    label: "Student Guidance",
-    value: "1-on-1",
-    subtext: "Daily doubt desk and personalized error tracking",
+    label: "Doubt Resolution",
+    value: "Dedicated",
+    subtext: "Accessible mentor guidance during center hours",
   },
 ];

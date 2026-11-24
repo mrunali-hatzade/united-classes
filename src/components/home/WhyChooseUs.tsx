@@ -15,9 +15,9 @@ export default function WhyChooseUs() {
       color: "text-blue-600 bg-blue-50 border-blue-200",
     },
     {
-      title: "Strictly Limited Batch Sizes",
+      title: "Focused Batch Sizes",
       description:
-        "Batches capped at 25–30 students ensure faculty mentors know each student's name, learning pace, and individual subject strengths and weaknesses.",
+        "Limited batch sizes ensure faculty mentors understand each student's learning pace, academic goals, and individual subject strengths.",
       icon: Users,
       color: "text-cyan-600 bg-cyan-50 border-cyan-200",
     },
@@ -36,9 +36,9 @@ export default function WhyChooseUs() {
       color: "text-amber-600 bg-amber-50 border-amber-200",
     },
     {
-      title: "Daily 1-on-1 Doubt Desk",
+      title: "Dedicated Doubt Resolution Desk",
       description:
-        "Dedicated daily 45-minute doubt-solving counters where students sit with subject faculty to resolve homework difficulties and tricky numericals without hesitation.",
+        "Regular doubt-solving sessions where students consult directly with subject faculty to resolve homework difficulties and tricky numericals.",
       icon: HelpCircle,
       color: "text-emerald-600 bg-emerald-50 border-emerald-200",
     },

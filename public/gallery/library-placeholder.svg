@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <linearGradient id="bgGrad4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B1528"/>
+      <stop offset="50%" stop-color="#0F2424"/>
+      <stop offset="100%" stop-color="#133535"/>
+    </linearGradient>
+    <pattern id="grid4" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#10B981" stroke-width="0.75" stroke-opacity="0.1"/>
+    </pattern>
+  </defs>
+  
+  <rect width="800" height="500" fill="url(#bgGrad4)"/>
+  <rect width="800" height="500" fill="url(#grid4)"/>
+  <circle cx="400" cy="220" r="140" fill="#10B981" opacity="0.12" filter="blur(40px)"/>
+  
+  <!-- Illustration: Library / Books / Study Space -->
+  <g transform="translate(400, 200)">
+    <!-- Book stack Base -->
+    <path d="M -80 50 L 80 50 L 70 70 L -70 70 Z" fill="#064E3B" stroke="#10B981" stroke-width="1.5"/>
+    <!-- Open Book -->
+    <path d="M 0 10 C -35 -20 -80 -15 -90 10 L -90 40 C -80 15 -35 10 0 40 C 35 10 80 15 90 40 L 90 10 C 80 -15 35 -20 0 10 Z" fill="#1E293B" stroke="#34D399" stroke-width="2"/>
+    <path d="M 0 10 L 0 40" stroke="#34D399" stroke-width="2"/>
+    <!-- Page lines -->
+    <line x1="-75" y1="12" x2="-20" y2="12" stroke="#6EE7B7" stroke-width="1.5" stroke-opacity="0.6"/>
+    <line x1="-75" y1="22" x2="-25" y2="22" stroke="#6EE7B7" stroke-width="1.5" stroke-opacity="0.6"/>
+    <line x1="20" y1="12" x2="75" y2="12" stroke="#6EE7B7" stroke-width="1.5" stroke-opacity="0.6"/>
+    <line x1="25" y1="22" x2="75" y2="22" stroke="#6EE7B7" stroke-width="1.5" stroke-opacity="0.6"/>
+    <!-- Lamp glow above -->
+    <path d="M 0 -70 L -25 -40 L 25 -40 Z" fill="#10B981" opacity="0.3"/>
+    <circle cx="0" cy="-70" r="8" fill="#34D399"/>
+  </g>
+  
+  <!-- Category Badge -->
+  <rect x="280" y="330" width="240" height="28" rx="14" fill="#064E3B" stroke="#10B981" stroke-width="1" stroke-opacity="0.5"/>
+  <text x="400" y="348" text-anchor="middle" fill="#A7F3D0" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="700" letter-spacing="1.5">STUDY SESSIONS &amp; LIBRARY</text>
+  
+  <!-- Main Title -->
+  <text x="400" y="395" text-anchor="middle" fill="#FFFFFF" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="700">NCERT Reference &amp; Self-Study Space</text>
+  
+  <!-- Subtitle -->
+  <text x="400" y="425" text-anchor="middle" fill="#94A3B8" font-family="system-ui, -apple-system, sans-serif" font-size="13">United Classes Bhandara • Learning Infrastructure</text>
+</svg>

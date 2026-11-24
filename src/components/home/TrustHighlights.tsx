@@ -16,7 +16,7 @@ export default function TrustHighlights() {
     },
     {
       title: "Board Exam Preparation",
-      subtitle: "State Board & CBSE 90%+",
+      subtitle: "State Board & CBSE Excellence",
       desc: "Meticulous derivation drafting, theorem proofs, reaction mechanisms, and anatomical diagram accuracy for top Board marks.",
       icon: GraduationCap,
       color: "bg-indigo-50 text-indigo-600 border-indigo-200",
@@ -32,7 +32,7 @@ export default function TrustHighlights() {
     },
     {
       title: "Dedicated Doubt Solving",
-      subtitle: "Daily 1-on-1 Faculty Desk",
+      subtitle: "Structured Faculty Desk",
       desc: "Personal mentor counters before and after lectures so no student ever goes home with unresolved conceptual doubts.",
       icon: HelpCircle,
       color: "bg-cyan-50 text-cyan-600 border-cyan-200",
@@ -78,7 +78,7 @@ export default function TrustHighlights() {
 
               <div className="pt-4 mt-4 border-t border-slate-100 flex items-center gap-1.5 text-[11px] font-semibold text-slate-500">
                 <CheckCircle2 className="w-3.5 h-3.5 text-blue-600 shrink-0" />
-                <span>Small batches (max 30 students)</span>
+                <span>Limited batch size for focused attention</span>
               </div>
             </motion.div>
           );
