@@ -187,5 +187,6 @@ export const navLinks = [
   { name: "Results", href: "/results" },
   { name: "Gallery", href: "/gallery" },
   { name: "Testimonials", href: "/testimonials" },
+  { name: "Careers", href: "/careers" },
   { name: "Contact", href: "/contact" },
 ];
