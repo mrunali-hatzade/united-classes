@@ -8,9 +8,9 @@ import { siteConfig } from "@/config/site";
 export default function WhyChooseUs() {
   const features = [
     {
-      title: "Strong Conceptual Foundations",
+      title: "Physical Models & Visual Science",
       description:
-        "Every chapter across Physics, Chemistry, Mathematics, and Biology begins with visual models and fundamental principles, ensuring students understand the science before applying equations.",
+        "Every chapter in Physics, Chemistry, Mathematics, and Biology incorporates physical apparatus, visual ray diagrams, and molecular geometry models to make abstract theory tangible.",
       icon: Compass,
       color: "text-blue-600 bg-blue-50 border-blue-200",
     },
@@ -29,16 +29,16 @@ export default function WhyChooseUs() {
       color: "text-indigo-600 bg-indigo-50 border-indigo-200",
     },
     {
-      title: "Dual Board & Competitive Focus",
+      title: "Diagnostic Mistake Analysis",
       description:
-        "Synchronized preparation for Maharashtra HSC State Board and CBSE derivations alongside objective speed shortcuts for JEE Main, NEET-UG, and MHT-CET.",
+        "Post-test error evaluations and personal student mistake logbooks diagnose recurring misconceptions and turn test errors into permanent conceptual strengths.",
       icon: Award,
       color: "text-amber-600 bg-amber-50 border-amber-200",
     },
     {
-      title: "Dedicated Doubt Resolution Desk",
+      title: "Direct Specialist Faculty Access",
       description:
-        "Regular doubt-solving sessions where students consult directly with subject faculty to resolve homework difficulties and tricky numericals.",
+        "Students interact directly with their postgraduate subject specialists during and after class, ensuring immediate, senior-level guidance on complex questions.",
       icon: HelpCircle,
       color: "text-emerald-600 bg-emerald-50 border-emerald-200",
     },

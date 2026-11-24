@@ -51,7 +51,7 @@ export const resultsData: ResultPlaceholder[] = [
     achievement: "Add Verified Result Here",
     academicYear: "2025–26 Batch",
     quotePlaceholder:
-      "Step-by-step derivation practice, reaction mechanisms, and calculus answer drafting gave me clarity on how to score 90%+ in State Board exams.",
+      "Step-by-step derivation practice, reaction mechanisms, and calculus answer drafting gave me clarity on how to score top marks in State Board exams.",
     isPlaceholderNotice: "Sample Result Placeholder",
   },
 ];

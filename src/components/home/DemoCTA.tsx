@@ -42,7 +42,7 @@ export default function DemoCTA() {
         <div className="pt-2 space-y-4">
           <div>
             <span className="font-atrangi text-amber-300 font-bold text-base sm:text-lg tracking-wide rotate-[-1.5deg] inline-block select-none">
-              ✨ Free 2-Day Trial — Zero Advance Required!
+              ✨ Free Trial Class — Zero Advance Required!
             </span>
           </div>
 
