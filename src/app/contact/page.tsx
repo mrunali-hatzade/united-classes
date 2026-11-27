@@ -40,7 +40,7 @@ export default function ContactPage() {
           <div id="demo-form" className="lg:col-span-7 bg-[#101D38] text-white rounded-3xl p-7 sm:p-10 border border-blue-900/60 shadow-2xl space-y-6">
             <div>
               <span className="text-xs font-bold uppercase tracking-wider text-cyan-400 block mb-1">
-                Zero Obligation • 100% Free Trial
+                Zero Obligation • Free Trial Class
               </span>
               <h2 className="text-2xl sm:text-3xl font-extrabold font-heading text-white">
                 Book Free Demo Lecture

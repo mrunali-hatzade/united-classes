@@ -18,9 +18,9 @@ export const faqData: FAQItem[] = [
     category: "Courses",
   },
   {
-    question: "What is the maximum batch size at United Classes?",
+    question: "What is the batch size approach at United Classes?",
     answer:
-      "To ensure genuine one-on-one attention and individual doubt resolution, our classroom batches are strictly limited to a maximum of 25–30 students. We believe large factory-style batches hinder conceptual learning.",
+      "To ensure genuine one-on-one attention and individual doubt resolution, our classroom batches are kept focused and limited. We believe overcrowded factory-style batches hinder conceptual learning and prevent students from asking questions freely.",
     category: "Teaching",
   },
   {
@@ -32,7 +32,7 @@ export const faqData: FAQItem[] = [
   {
     question: "How are student doubts addressed outside lecture hours?",
     answer:
-      "We have dedicated 45-minute daily doubt-clearing sessions before and after scheduled batches. Students can also bring school or test doubts to our faculty for personalized step-by-step guidance.",
+      "We provide regular doubt-clearing sessions before and after scheduled batches. Students can also bring school homework or test difficulties to our subject faculty for personalized step-by-step guidance.",
     category: "Teaching",
   },
   {

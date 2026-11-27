@@ -38,7 +38,7 @@ export default function LocationSection() {
                   {siteConfig.brandName} Bhandara
                 </h3>
                 <p className="text-xs text-slate-500 mt-1">
-                  Dedicated Physics Classroom & Doubt Clearing Desk
+                  Premier Science Coaching (Physics, Chemistry, Maths &amp; Biology) &amp; Doubt Clearing Desk
                 </p>
               </div>
 

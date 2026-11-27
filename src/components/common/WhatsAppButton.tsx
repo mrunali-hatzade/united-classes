@@ -2,28 +2,20 @@
 
 import React, { useState } from "react";
 import { MessageCircle, X, Sparkles, Copy, Check, ExternalLink } from "lucide-react";
-import { siteConfig } from "@/config/site";
+import { siteConfig, getWhatsAppUrl } from "@/config/site";
 
 export default function WhatsAppButton() {
   const [showDemoNotice, setShowDemoNotice] = useState(false);
   const [copied, setCopied] = useState(false);
 
-  const prefilledMessage =
-    "Hello, I am interested in Physics coaching. I would like to know more about your courses and free demo lecture.";
-
-  const isPlaceholderNumber =
-    !siteConfig.contact.whatsappNumber ||
-    siteConfig.contact.whatsappNumber.includes("X") ||
-    siteConfig.contact.whatsappNumber.length < 10;
+  const prefilledMessage = siteConfig.contact.defaultWhatsAppMessage;
 
   const handleClick = (e: React.MouseEvent) => {
     e.preventDefault();
-    if (isPlaceholderNumber) {
+    const { url, isPlaceholder } = getWhatsAppUrl(prefilledMessage);
+    if (isPlaceholder) {
       setShowDemoNotice(true);
     } else {
-      const url = `https://wa.me/${siteConfig.contact.whatsappNumber}?text=${encodeURIComponent(
-        prefilledMessage
-      )}`;
       window.open(url, "_blank", "noopener,noreferrer");
     }
   };

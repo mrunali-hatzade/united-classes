@@ -2,7 +2,8 @@ import React from "react";
 import Link from "next/link";
 import type { Metadata } from "next";
 import { Trophy, Award, User, Sparkles, ArrowRight, ShieldCheck, CheckCircle2, TrendingUp, HelpCircle } from "lucide-react";
-import { resultsData, statisticsPlaceholders } from "@/data/results";
+import { statisticsPlaceholders } from "@/data/results";
+import ResultsShowcase from "@/components/results/ResultsShowcase";
 import { siteConfig } from "@/config/site";
 
 export const metadata: Metadata = {
@@ -17,25 +18,25 @@ export default function ResultsPage() {
       title: "JEE Main & Advanced",
       tag: "Engineering Entrances",
       desc: "Top percentiles driven by deep problem-solving skills, multi-concept mechanics, and time management.",
-      badge: "Target 99+ Percentile",
+      badge: "Engineering Track",
     },
     {
       title: "NEET-UG (PCB Medical)",
       tag: "Medical Entrances",
-      desc: "Top scores across Physics, Chemistry & Biology (Botany/Zoology 360 target) with NCERT line-by-line mastery.",
-      badge: "Target 650+ Marks",
+      desc: "Comprehensive preparation across Physics, Chemistry & Biology (Botany & Zoology) with NCERT line-by-line mastery.",
+      badge: "Medical Track",
     },
     {
       title: "MHT-CET (PCM / PCB)",
       tag: "Maharashtra State Entrance",
       desc: "High percentile scores targeting COEP, VJTI, and top Maharashtra engineering and pharmacy colleges.",
-      badge: "Target 99+ Percentile",
+      badge: "State Entrance Track",
     },
     {
       title: "12th HSC & CBSE Boards",
       tag: "Board Theory Excellence",
       desc: "Mastery of step-by-step theoretical derivations, ray diagrams, and examiner presentation formats.",
-      badge: "90%+ Scores",
+      badge: "Board Exam Excellence",
     },
   ];
 
@@ -56,6 +57,13 @@ export default function ResultsPage() {
           <p className="text-slate-600 text-sm sm:text-base leading-relaxed">
             Consistent preparation, personal doubt clearing, and concept-first pedagogy reflect in our students&apos; confidence and performance across competitive examinations.
           </p>
+
+          <div className="bg-amber-50/90 border border-amber-300/80 rounded-2xl p-3.5 text-xs text-amber-900 inline-flex items-center gap-2 shadow-xs">
+            <Sparkles className="w-4 h-4 text-amber-600 shrink-0" />
+            <span>
+              <strong>Sample Performance Showcase:</strong> Student achievement cards below represent structured sample layouts. Official verified merit records and scorecards will be published upon client verification.
+            </span>
+          </div>
         </div>
       </section>
 
@@ -94,55 +102,9 @@ export default function ResultsPage() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
-          {resultsData.map((item) => (
-            <div
-              key={item.id}
-              className="bg-white rounded-3xl border border-slate-200/90 shadow-md p-6 flex flex-col justify-between hover:shadow-xl hover:border-blue-400 transition-all duration-300 transform hover:-translate-y-1 group"
-            >
-              <div>
-                {/* Avatar Placeholder */}
-                <div className="flex items-center gap-3.5 mb-4">
-                  <div className="w-12 h-12 rounded-full bg-slate-100 border border-slate-300 flex items-center justify-center text-slate-500 group-hover:bg-blue-50 group-hover:text-blue-600 transition-colors">
-                    <User className="w-6 h-6" />
-                  </div>
-                  <div>
-                    <h3 className="font-heading font-bold text-sm text-slate-900 group-hover:text-blue-600 transition-colors">
-                      {item.studentName}
-                    </h3>
-                    <span className="text-[11px] text-slate-500 block">
-                      {item.academicYear}
-                    </span>
-                  </div>
-                </div>
-
-                <div className="mb-4">
-                  <span className="inline-block px-2.5 py-1 rounded-md text-[11px] font-bold uppercase tracking-wider bg-blue-50 text-blue-700 border border-blue-200">
-                    {item.exam}
-                  </span>
-                </div>
-
-                <div className="bg-amber-50/70 border border-amber-200/80 rounded-xl p-3.5 mb-4">
-                  <span className="text-[10px] font-bold uppercase tracking-wider text-amber-800 block mb-0.5">
-                    Exam Achievement:
-                  </span>
-                  <p className="text-xs font-semibold text-slate-900 font-mono">
-                    {item.achievement}
-                  </p>
-                </div>
-
-                <p className="text-xs text-slate-500 italic leading-relaxed">
-                  {item.quotePlaceholder}
-                </p>
-              </div>
-
-              <div className="pt-4 mt-4 border-t border-slate-100">
-                <span className="text-[10px] text-slate-400 block font-mono">
-                  {item.badge}
-                </span>
-              </div>
-            </div>
-          ))}
+        {/* Interactive Multi-Year Results Showcase */}
+        <div className="mb-16">
+          <ResultsShowcase initialYear="All" />
         </div>
 
         {/* 4 Exam Categories Breakdown */}
@@ -182,7 +144,7 @@ export default function ResultsPage() {
             Your Success Story Starts Here
           </h2>
           <p className="text-slate-300 text-sm max-w-xl mx-auto leading-relaxed">
-            Take the first step toward conquering Physics. Attend a free interactive trial class and see our teaching methodology firsthand.
+            Take the first step toward mastering Science (Physics, Chemistry, Mathematics &amp; Biology). Attend a free interactive trial class and see our teaching methodology firsthand.
           </p>
           <div className="pt-2 flex flex-col sm:flex-row justify-center gap-4">
             <Link

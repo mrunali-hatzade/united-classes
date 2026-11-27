@@ -8,44 +8,44 @@ import { siteConfig } from "@/config/site";
 export default function WhyChooseUs() {
   const features = [
     {
-      title: "Strong Conceptual Foundation",
+      title: "Physical Models & Visual Science",
       description:
-        "Every chapter begins with intuitive physical visualisations and mathematical tools, ensuring students understand why equations work before applying them.",
+        "Every chapter in Physics, Chemistry, Mathematics, and Biology incorporates physical apparatus, visual ray diagrams, and molecular geometry models to make abstract theory tangible.",
       icon: Compass,
       color: "text-blue-600 bg-blue-50 border-blue-200",
     },
     {
-      title: "Personal Attention",
+      title: "Focused Batch Sizes",
       description:
-        "Batches strictly capped at 25–30 students ensure the faculty knows every student's learning pace, strengths, and specific difficulty areas.",
+        "Limited batch sizes ensure faculty mentors understand each student's learning pace, academic goals, and individual subject strengths.",
       icon: Users,
       color: "text-cyan-600 bg-cyan-50 border-cyan-200",
     },
     {
-      title: "Regular Practice Sessions",
+      title: "Daily Graded Practice (DPPs)",
       description:
-        "Daily Problem Practice sheets (DPPs) and graded numerical worksheets ensure that concept exposure is immediately followed by hands-on solving.",
+        "Daily Practice Problem sheets and homework evaluations ensure classroom theory is immediately converted into numerical and analytical problem-solving capability.",
       icon: ClipboardCheck,
       color: "text-indigo-600 bg-indigo-50 border-indigo-200",
     },
     {
-      title: "Exam-Oriented Preparation",
+      title: "Diagnostic Mistake Analysis",
       description:
-        "Comprehensive coverage of HSC State Board, CBSE derivations, JEE multi-concept problems, and NEET speed strategies with past 15 years' PYQ analysis.",
+        "Post-test error evaluations and personal student mistake logbooks diagnose recurring misconceptions and turn test errors into permanent conceptual strengths.",
       icon: Award,
       color: "text-amber-600 bg-amber-50 border-amber-200",
     },
     {
-      title: "Doubt-Solving Support",
+      title: "Direct Specialist Faculty Access",
       description:
-        "Daily dedicated 45-minute doubt desk where students can sit with faculty one-on-one without hesitation or embarrassment.",
+        "Students interact directly with their postgraduate subject specialists during and after class, ensuring immediate, senior-level guidance on complex questions.",
       icon: HelpCircle,
       color: "text-emerald-600 bg-emerald-50 border-emerald-200",
     },
     {
-      title: "Structured Revision",
+      title: "Structured Cumulative Revision",
       description:
-        "Formula summary sheets, micro-revision cycles, and cumulative syllabus mock tests ensure that topics learned in July stay sharp till final exams in March.",
+        "Formula summary sheets, reaction flowcharts, anatomy diagrams, and cumulative mock tests ensure chapters mastered in July stay sharp for exams in March.",
       icon: RefreshCw,
       color: "text-rose-600 bg-rose-50 border-rose-200",
     },
@@ -68,15 +68,15 @@ export default function WhyChooseUs() {
           </div>
 
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold font-heading text-[#0F172A] tracking-tight">
-            Why Students Choose <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-indigo-600 to-cyan-600">{siteConfig.brandName}</span>
+            Why Choose <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-indigo-600 to-cyan-600">{siteConfig.brandName}</span>
           </h2>
 
           <p className="text-slate-600 text-sm sm:text-base leading-relaxed">
-            Our teaching framework is designed to eliminate the fear of physics and build confident, systematic problem solvers.
+            Our teaching framework combines deep conceptual clarity with rigorous numerical problem solving, giving students in Bhandara an unshakeable academic foundation.
           </p>
         </motion.div>
 
-        {/* 6 Feature Cards Grid with Stagger & Tilt */}
+        {/* 6 Feature Cards Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
           {features.map((feature, idx) => {
             const Icon = feature.icon;
@@ -100,7 +100,7 @@ export default function WhyChooseUs() {
                   {feature.title}
                 </h3>
 
-                <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                <p className="text-slate-600 text-xs sm:text-sm leading-relaxed">
                   {feature.description}
                 </p>
               </motion.div>

@@ -6,7 +6,7 @@ import { User, Award, BookOpen, CheckCircle2, GraduationCap, Sparkles, ArrowRigh
 import { siteConfig } from "@/config/site";
 
 export const metadata: Metadata = {
-  title: "About Us | United Classes Bhandara - Building Strong Foundations in Physics",
+  title: "About Us | United Classes Bhandara - Building Strong Foundations in Science (PCMB)",
   description:
     "Learn about United Classes, our teaching approach, faculty mentorship, and commitment to conceptual clarity for Class 11th, 12th, JEE, NEET, and MHT-CET students in Bhandara.",
 };
@@ -36,10 +36,10 @@ export default function AboutPage() {
   ];
 
   const classroomFeatures = [
-    "Strict batch limit of 25–30 students for personal accountability",
+    "Focused batch sizes for personal accountability & attention",
     "Air-conditioned, distraction-free audio-visual classroom",
     "Physical demonstration models for mechanics and optics",
-    "Dedicated daily 45-minute doubt resolution counter",
+    "Regular doubt resolution desk with faculty mentors",
     "Comprehensive printed formula handbooks & derivation booklets",
     "Convenient location accessible from all parts of Bhandara",
   ];
@@ -60,7 +60,7 @@ export default function AboutPage() {
             </h1>
 
             <p className="text-slate-600 text-base sm:text-lg leading-relaxed">
-              Physics is not a chore of rote memorization—it is the language of how reality functions. We help Class 11th and 12th science students master this language with clarity and confidence.
+              Science is not a chore of rote memorization—it is the language of how reality functions. We help Class 11th and 12th science students master Physics, Chemistry, Mathematics &amp; Biology with clarity and confidence.
             </p>
           </div>
         </div>
@@ -72,21 +72,40 @@ export default function AboutPage() {
           {/* Left Column: Faculty Card (5 cols) */}
           <div className="lg:col-span-5 sticky top-24">
             <div className="bg-white rounded-3xl border border-slate-200/90 shadow-xl p-6 sm:p-8 space-y-6">
-              {/* Photo Box Placeholder */}
-              <div className="w-full aspect-[4/4.5] rounded-2xl bg-gradient-to-br from-slate-100 via-blue-50 to-slate-200 border-2 border-dashed border-blue-300 flex flex-col items-center justify-center p-6 text-center">
-                <div className="w-24 h-24 rounded-full bg-blue-600/10 text-blue-600 border border-blue-200 flex items-center justify-center mb-4">
-                  <User className="w-12 h-12 text-blue-600/70" />
+              {/* Faculty Team Composite Card */}
+              <div className="w-full rounded-2xl bg-gradient-to-br from-slate-50 via-blue-50/50 to-slate-100 border border-slate-200/90 p-5 text-center space-y-4 shadow-sm">
+                <div className="grid grid-cols-2 gap-2.5">
+                  {siteConfig.facultyTeam.map((fac, idx) => (
+                    <div key={idx} className="bg-white rounded-xl p-2.5 border border-slate-200/80 shadow-2xs flex flex-col items-center">
+                      <div className="relative w-12 h-12 rounded-full overflow-hidden border border-blue-400/80 mb-1.5 shadow-2xs bg-slate-100">
+                        <Image
+                          src={fac.imageUrl}
+                          alt={fac.name}
+                          fill
+                          sizes="48px"
+                          className="object-cover object-top"
+                        />
+                      </div>
+                      <span className="text-[10px] font-bold text-slate-800 truncate max-w-full block">
+                        {fac.name}
+                      </span>
+                      <span className="text-[9px] text-blue-600 font-semibold block">
+                        {fac.subject} Lead
+                      </span>
+                    </div>
+                  ))}
                 </div>
-                <h3 className="font-heading font-bold text-lg text-slate-800">
-                  {siteConfig.teacherProfile.name}
-                </h3>
-                <span className="text-xs font-semibold text-blue-600">
-                  {siteConfig.teacherProfile.designation}
-                </span>
-                <span className="text-[11px] text-slate-500 max-w-[240px] mt-1">
-                  {siteConfig.teacherProfile.qualificationPlaceholder}
-                </span>
-                <span className="font-atrangi text-xs font-bold text-amber-800 bg-amber-50 px-2.5 py-1 rounded-full border border-amber-300 mt-3 rotate-1 inline-block">
+
+                <div>
+                  <h3 className="font-heading font-bold text-base text-slate-900">
+                    {siteConfig.brandName} Faculty Team
+                  </h3>
+                  <span className="text-xs text-blue-600 font-semibold block">
+                    Specialist Mentors (Physics, Chemistry, Maths &amp; Biology)
+                  </span>
+                </div>
+
+                <span className="font-atrangi text-xs font-bold text-amber-800 bg-amber-50 px-2.5 py-1 rounded-full border border-amber-300 inline-block">
                   🎯 Concept First Mentorship
                 </span>
               </div>
@@ -136,7 +155,7 @@ export default function AboutPage() {
             </p>
 
             <p className="text-base text-slate-600 leading-relaxed">
-              Big commercial coaching factories pack 80 to 100 students in crowded halls where questions are discouraged and derivations are rushed. At United Classes Bhandara, we capped batch sizes strictly at 30 students and assembled dedicated postgraduate subject specialists for Physics, Chemistry, Mathematics, and Biology.
+              Big commercial coaching factories pack 80 to 100 students in crowded halls where questions are discouraged and derivations are rushed. At United Classes Bhandara, we maintain focused batch sizes to ensure individual attention and have assembled dedicated postgraduate subject specialists for Physics, Chemistry, Mathematics, and Biology.
             </p>
 
             <div className="bg-blue-50/80 border-l-4 border-blue-600 p-5 rounded-r-2xl">
@@ -223,6 +242,9 @@ export default function AboutPage() {
             </h2>
             <p className="text-slate-600 text-sm">
               No single teacher handles multiple subjects. Each discipline is led by an experienced postgraduate specialist.
+            </p>
+            <p className="text-[11px] text-slate-400 italic">
+              (Sample faculty profiles illustrating department setup • Official credentials and photographs will be updated upon final institute roster confirmation)
             </p>
           </div>
 

@@ -25,7 +25,7 @@ export default function DemoCTA() {
         {/* Badge */}
         <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/15 border border-white/25 text-white text-xs font-bold tracking-wider uppercase shadow-md backdrop-blur-md">
           <Sparkles className="w-3.5 h-3.5 text-amber-300" />
-          <span>Zero Obligation • 100% Free Demo Session</span>
+          <span>Zero Obligation • Free Demo Session</span>
         </div>
 
         {/* Heading */}
@@ -42,7 +42,7 @@ export default function DemoCTA() {
         <div className="pt-2 space-y-4">
           <div>
             <span className="font-atrangi text-amber-300 font-bold text-base sm:text-lg tracking-wide rotate-[-1.5deg] inline-block select-none">
-              ✨ Free 2-Day Trial — Zero Advance Required!
+              ✨ Free Trial Class — Zero Advance Required!
             </span>
           </div>
 

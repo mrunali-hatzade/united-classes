@@ -53,9 +53,9 @@ export const testimonialsData: TestimonialItem[] = [
     role: "MHT-CET Aspirant",
     exam: "MHT-CET & State Board",
     batch: "Academic Session 2025–26",
-    highlight: "Speed strategies made the 45-second question target possible",
+    highlight: "Focused strategies made competitive exam pacing manageable",
     feedback:
-      "MHT-CET demands immense speed without negative marking. The textbook line-by-line review and shortcut methods helped me solve questions in half the usual time.",
+      "MHT-CET demands disciplined speed and accuracy. The systematic textbook review and structured problem-solving methods helped build exam confidence.",
     rating: 5,
     isDemoNotice: "Sample Student Feedback",
   },

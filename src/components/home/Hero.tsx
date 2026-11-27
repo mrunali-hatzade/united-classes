@@ -4,7 +4,7 @@ import React from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { ArrowRight, BookOpen, Lightbulb, Target, HelpCircle } from "lucide-react";
-import PhysicsVisual from "@/components/common/PhysicsVisual";
+import ScienceVisual from "@/components/common/ScienceVisual";
 import { siteConfig } from "@/config/site";
 import { useDemoModal } from "@/context/DemoModalContext";
 
@@ -13,7 +13,7 @@ export default function Hero() {
 
   return (
     <section className="relative min-h-[90vh] flex items-center bg-gradient-to-br from-[#EBF3FE] via-[#F0F7FF] to-[#E6EEF8] pt-32 sm:pt-36 pb-20 overflow-hidden text-[#0F172A] border-b border-blue-200/60">
-      {/* Background Subtle Physics Grid Texture */}
+      {/* Background Subtle Science Grid Texture */}
       <div className="absolute inset-0 bg-[radial-gradient(#3B82F6_1px,transparent_1px)] [background-size:28px_28px] opacity-20 pointer-events-none" />
 
       {/* Soft Light Energy Glows */}
@@ -24,7 +24,7 @@ export default function Hero() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
           {/* Left Column: 7 cols on lg */}
           <div className="lg:col-span-7 space-y-6 sm:space-y-7 text-left">
-            {/* Small Badge */}
+            {/* Small Admissions Badge */}
             <motion.div
               initial={{ opacity: 0, y: -12 }}
               animate={{ opacity: 1, y: 0 }}
@@ -51,14 +51,14 @@ export default function Hero() {
               </span>
             </motion.h1>
 
-            {/* Supporting Text */}
+            {/* Supporting Text - Balanced across Physics, Chemistry, Maths & Biology */}
             <motion.p
               initial={{ opacity: 0, y: 16 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
               className="text-base sm:text-lg text-slate-600 max-w-2xl leading-relaxed font-normal"
             >
-              Build strong conceptual depth in Physics, Chemistry, Mathematics &amp; Biology. Prepare with confidence for your Board examinations, JEE Main, NEET-UG and MHT-CET in Bhandara.
+              Premier Science education in Bhandara for Class 11th &amp; 12th. Master <strong>Physics</strong>, <strong>Chemistry</strong>, <strong>Mathematics</strong>, and <strong>Biology</strong> through conceptual clarity, derivation precision, and speed numerical drills for Board exams, JEE Main, NEET-UG, and MHT-CET.
             </motion.p>
 
             {/* CTA Buttons */}
@@ -77,17 +77,17 @@ export default function Hero() {
               </button>
 
               <Link
-                href="#courses"
+                href="#programmes"
                 className="px-7 py-4 rounded-xl bg-white hover:bg-slate-50 text-slate-800 font-bold text-sm tracking-wide border border-slate-300 hover:border-blue-400 transition-all duration-300 flex items-center justify-center gap-2 shadow-sm"
               >
                 <BookOpen className="w-4 h-4 text-blue-600" />
-                <span>Explore Courses</span>
+                <span>Explore Programmes</span>
               </Link>
 
-              {/* Atrangi handwritten sticker */}
+              {/* Atrangi handwritten badge */}
               <span className="hidden xl:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-amber-50 border border-amber-300/80 text-amber-900 shadow-xs rotate-[-2deg] select-none">
                 <span className="font-atrangi text-sm font-bold text-amber-700 tracking-wide">
-                  ✍️ 100% Concept Clarity!
+                  ✍️ Strong Concept Clarity!
                 </span>
               </span>
             </motion.div>
@@ -105,7 +105,7 @@ export default function Hero() {
                 </div>
                 <div className="text-xs">
                   <span className="font-bold text-slate-900 block">Concept-Based Learning</span>
-                  <span className="text-slate-500">First principles & visual clarity</span>
+                  <span className="text-slate-500">First principles across PCMB</span>
                 </div>
               </div>
 
@@ -114,8 +114,8 @@ export default function Hero() {
                   <Target className="w-4 h-4" />
                 </div>
                 <div className="text-xs">
-                  <span className="font-bold text-slate-900 block">Exam-Focused Preparation</span>
-                  <span className="text-slate-500">Board, JEE & NEET syllabus</span>
+                  <span className="font-bold text-slate-900 block">Exam-Focused Depth</span>
+                  <span className="text-slate-500">Board, JEE, NEET &amp; MHT-CET</span>
                 </div>
               </div>
 
@@ -124,21 +124,21 @@ export default function Hero() {
                   <HelpCircle className="w-4 h-4" />
                 </div>
                 <div className="text-xs">
-                  <span className="font-bold text-slate-900 block">Personal Doubt Solving</span>
-                  <span className="text-slate-500">Daily 1-on-1 desk support</span>
+                  <span className="font-bold text-slate-900 block">Personal Doubt Desk</span>
+                  <span className="text-slate-500">Daily 1-on-1 faculty support</span>
                 </div>
               </div>
             </motion.div>
           </div>
 
-          {/* Right Column: 5 cols on lg - Academic Physics Visual */}
+          {/* Right Column: 5 cols on lg - Balanced Science Visual */}
           <motion.div
             initial={{ opacity: 0, scale: 0.94 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.25, ease: [0.21, 0.47, 0.32, 0.98] }}
             className="lg:col-span-5 flex justify-center items-center"
           >
-            <PhysicsVisual />
+            <ScienceVisual />
           </motion.div>
         </div>
       </div>

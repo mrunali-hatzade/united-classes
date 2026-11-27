@@ -26,8 +26,15 @@ export default function TestimonialsPage() {
           </h1>
 
           <p className="text-slate-600 text-sm sm:text-base leading-relaxed">
-            Discover how our personal mentoring and concept-first physics approach helps students overcome fear, master numericals, and excel in competitive exams.
+            Discover how our personal mentoring and concept-first Science approach (Physics, Chemistry, Maths &amp; Biology) helps students overcome fear, master numericals, and excel in competitive exams.
           </p>
+
+          <div className="bg-amber-50/90 border border-amber-300/80 rounded-2xl p-3.5 text-xs text-amber-900 inline-flex items-center gap-2 shadow-xs">
+            <Sparkles className="w-4 h-4 text-amber-600 shrink-0" />
+            <span>
+              <strong>Sample Feedback Showcase:</strong> Testimonials below represent structured preview cards. Verified student feedback forms will be published upon batch onboarding.
+            </span>
+          </div>
         </div>
       </section>
 
@@ -75,9 +82,14 @@ export default function TestimonialsPage() {
                   </div>
                 </div>
 
-                <span className="text-xs font-semibold text-blue-600 bg-blue-50 px-2.5 py-1 rounded-lg">
-                  {item.exam}
-                </span>
+                <div className="text-right">
+                  <span className="text-xs font-semibold text-blue-600 bg-blue-50 px-2.5 py-1 rounded-lg block">
+                    {item.exam}
+                  </span>
+                  <span className="text-[10px] text-slate-400 block mt-0.5">
+                    {item.isDemoNotice}
+                  </span>
+                </div>
               </div>
             </div>
           ))}

@@ -32,12 +32,12 @@ export default function Testimonials() {
 
           <div className="pt-1">
             <span className="font-atrangi text-amber-600 font-bold text-base sm:text-lg inline-block -rotate-1">
-              ⭐ Direct from students&apos; personal diaries &amp; feedback sheets
+              ⭐ Genuine student experiences across PCM, PCB, and Board preparation
             </span>
           </div>
 
           <p className="text-slate-600 text-sm sm:text-base leading-relaxed">
-            Real feedback from students and parents about the concept-first approach and personal mentorship at {siteConfig.brandName}.
+            Parent and student perspectives on conceptual depth, structured numerical practice, and faculty mentorship at {siteConfig.brandName}.
           </p>
         </motion.div>
 

@@ -1,8 +1,9 @@
 import { MetadataRoute } from "next";
+import { siteConfig } from "@/config/site";
 import { coursesData } from "@/data/courses";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://physicsedge-bhandara.demo";
+  const baseUrl = siteConfig.websiteUrl;
 
   const staticRoutes: MetadataRoute.Sitemap = [
     {
@@ -30,10 +31,22 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     {
+      url: `${baseUrl}/gallery`,
+      lastModified: new Date("2026-01-01"),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
       url: `${baseUrl}/testimonials`,
       lastModified: new Date("2026-01-01"),
       changeFrequency: "monthly",
       priority: 0.7,
+    },
+    {
+      url: `${baseUrl}/careers`,
+      lastModified: new Date("2026-01-01"),
+      changeFrequency: "weekly",
+      priority: 0.8,
     },
     {
       url: `${baseUrl}/contact`,
@@ -43,11 +56,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
   ];
 
-  const courseRoutes: MetadataRoute.Sitemap = coursesData.map((course) => ({
-    url: `${baseUrl}/courses/${course.slug}`,
+  const courseRoutes: MetadataRoute.Sitemap = coursesData.map((c) => ({
+    url: `${baseUrl}/courses/${c.slug}`,
     lastModified: new Date("2026-01-01"),
     changeFrequency: "weekly",
-    priority: 0.85,
+    priority: 0.8,
   }));
 
   return [...staticRoutes, ...courseRoutes];

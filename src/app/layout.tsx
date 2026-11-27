@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import "./globals.css";
+import { siteConfig } from "@/config/site";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import WhatsAppButton from "@/components/common/WhatsAppButton";
@@ -31,7 +32,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_IN",
-    url: "https://unitedclasses-bhandara.demo",
+    url: siteConfig.websiteUrl,
     title: "United Classes Bhandara | Understand Science. Master Your Future.",
     description:
       "Premier Science coaching in Bhandara, Maharashtra for Class 11th, 12th (PCMB), JEE Main, NEET & MHT-CET.",

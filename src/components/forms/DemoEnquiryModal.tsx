@@ -47,7 +47,12 @@ export default function DemoEnquiryModal({
       />
 
       {/* Modal Dialog */}
-      <div className="relative w-full max-w-xl bg-[#101D38] border border-blue-500/30 rounded-2xl sm:rounded-3xl shadow-2xl shadow-blue-950/80 p-5 sm:p-7 z-10 my-auto text-left transition-all animate-in zoom-in-95 duration-200 max-h-[92vh] overflow-y-auto">
+      <div
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="demo-modal-title"
+        className="relative w-full max-w-xl bg-[#101D38] border border-blue-500/30 rounded-2xl sm:rounded-3xl shadow-2xl shadow-blue-950/80 p-5 sm:p-7 z-10 my-auto text-left transition-all animate-in zoom-in-95 duration-200 max-h-[92vh] overflow-y-auto"
+      >
         {/* Close Button */}
         <button
           onClick={onClose}
@@ -64,11 +69,11 @@ export default function DemoEnquiryModal({
             <span>Admissions Open {siteConfig.academicSession}</span>
           </div>
 
-          <h2 className="text-xl sm:text-2xl font-bold text-white font-heading tracking-tight">
+          <h2 id="demo-modal-title" className="text-xl sm:text-2xl font-bold text-white font-heading tracking-tight">
             Book Your Free Demo Lecture
           </h2>
           <p className="text-slate-300 text-xs sm:text-sm mt-1">
-            Experience our concept-first physics pedagogy in {siteConfig.location.city}. Reserve your seat before the batch fills up.
+            Experience our concept-first Science pedagogy (Physics, Chemistry, Mathematics &amp; Biology) in {siteConfig.location.city}. Reserve your seat before the batch fills up.
           </p>
         </div>
 
